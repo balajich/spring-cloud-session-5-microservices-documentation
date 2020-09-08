@@ -10,3 +10,5 @@ eureka:
 springdoc:
   swagger-ui:
     path: /employee/swagger-ui.html
+  api-docs:
+    path: /employee/v3/api-docs/

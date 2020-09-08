@@ -54,6 +54,8 @@ What is covered ?
 # Accessing Swagger UI  of employee and payroll api
 - Swagger UI of employee api via gateway: ```  http://localhost:8080/employee/swagger-ui.html ```
 - Swagger UI of payroll api via gateway: ```  http://localhost:8080/payroll/swagger-ui.html ```
+-  OpenAPI descriptions of employee api ``` curl -s -L http://localhost:8080/employee/v3/api-docs/  ```
+
 # Scale up application
 Run multiple instances of employee-api,payroll-api to handle more volume of requests.
 - New Employee API instance: ``` java -jar .\employee-api\target\employee-api-0.0.1-SNAPSHOT.jar ```

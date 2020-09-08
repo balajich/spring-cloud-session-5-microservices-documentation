@@ -146,7 +146,9 @@ cloud:
 - How micoservice communicate with each other,Inter microservice communication
 
 # References
-- https://spring.io/projects/spring-cloud
-- https://en.wikipedia.org/wiki/Microservices
+- Spring Microservices in Action by John Carnell 
+- Hands-On Microservices with Spring Boot and Spring Cloud: Build and deploy Java microservices 
+using Spring Cloud, Istio, and Kubernetes -Magnus Larsson 
+
 # Next Tutorial
 - https://github.com/balajich/spring-cloud-session-3-inter-microservice-communication-sync

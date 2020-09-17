@@ -1,21 +1,24 @@
 # Spring Cloud Session 5 Microservices Documentation
 In this tutorial we are going to learn how do we document REST API microservices using **OpenAPI/Swagger**.
 - Swagger is one of the mostly used standard while documenting REST API services.
-- We will use SpringFox to produce documentation.
+- We will use SpringFox to produce Swagger documentation.
 
-Overview
+**Overview**
 - We will be using SpringFox to document employee-api , payroll-api
-- API documentation will be viewed via gateway
-- Access Swagger UI of employee-api and make few rest calls
+- API documentation will be viewed via gateway.
+- Access Swagger UI of employee-api and make few rest calls.
 
-Important Notes
+**Important Notes**
 - Please refer my previous sessions to understand how these microservices work. In this session we will focus on documenting
-API and accessing API documentation. 
+API and accessing API documentation.
+- Using SpringFox we can have API code and documentation present in same source files, This makes  api documentation doesn't 
+go out of sync with code.
+ 
 
 # Source Code 
-``` git clone https://github.com/balajich/spring-cloud-session-2-microservices-dynamic-ports.git ``` 
+``` git clone https://github.com/balajich/spring-cloud-session-5-microservices-documentation.git ``` 
 # Video
-[![Spring Cloud Session 2 Microservices Dynamic ports](https://img.youtube.com/vi/5WuallBaMnw/0.jpg)](https://www.youtube.com/watch?v=5WuallBaMnw)
+[![Spring Cloud Session 5 Microservices Documentation](https://img.youtube.com/vi/5WuallBaMnw/0.jpg)](https://www.youtube.com/watch?v=5WuallBaMnw)
 - https://youtu.be/5WuallBaMnw
 # Architecture
 ![architecture](architecture.png "architecture")
@@ -24,7 +27,7 @@ API and accessing API documentation.
 - Apache Maven 3.6.3 or above
 # Clean and Build
 - Java
-    - ``` cd spring-cloud-session-2-microservices-introduction ``` 
+    - ``` cd spring-cloud-session-5-microservices-documentation ``` 
     - ``` mvn clean install ```
  
 # Running components
@@ -38,11 +41,6 @@ API and accessing API documentation.
 - Swagger UI of payroll api via gateway: ```  http://localhost:8080/payroll/swagger-ui.html ```
 - OpenAPI descriptions of employee api ``` curl -s -L http://localhost:8080/employee/v3/api-docs/  ```
 - OpenAPI descriptions of payroll api ``` curl -s -L http://localhost:8080/payroll/v3/api-docs/  ```
-
-# Scale up application
-Run multiple instances of employee-api,payroll-api to handle more volume of requests.
-- New Employee API instance: ``` java -jar .\employee-api\target\employee-api-0.0.1-SNAPSHOT.jar ```
-- New Payroll API instance: ``` java -jar .\payroll-api\target\payroll-api-0.0.1-SNAPSHOT.jar ```
 
 # Code
 *Registry(Service Registry)* is a Spring Boot application that uses Eureka Server. Snippet of **RegistryApplication**
@@ -125,12 +123,12 @@ cloud:
 ```
 
 # Next Steps
-- How micoservice communicate with each other,Inter microservice communication
+- How deploy microservices using docker
 
 # References
+ - Hands-On Microservices with Spring Boot and Spring Cloud: Build and deploy Java microservices 
+using Spring Cloud, Istio, and Kubernetes -Magnus Larsson
 - Spring Microservices in Action by John Carnell 
-- Hands-On Microservices with Spring Boot and Spring Cloud: Build and deploy Java microservices 
-using Spring Cloud, Istio, and Kubernetes -Magnus Larsson 
 
 # Next Tutorial
 - https://github.com/balajich/spring-cloud-session-3-inter-microservice-communication-sync

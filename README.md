@@ -1,34 +1,16 @@
 # Spring Cloud Session 5 Microservices Documentation
-In this tutorial we are going build micorservice which bind to random port and discover each other using registry. This 
-is very useful when you want to dynamically scale applications. Here microservices(employee-api,payroll-api), registry 
-services are exposed  via gateway. User will access the services via gateway. All the services are developed using Java. 
-The microservices run on random port and registers their service endpoint with service registry application.
-Gateway routes the requests to micorservices based on the information available in registry.  
-**If you are not able to understand the first paragraph this is perfectly normal,Please watch my video to understand it better**
+In this tutorial we are going to learn how do we document REST API microservices using **OpenAPI/Swagger**.
+- Swagger is one of the mostly used standard while documenting REST API services.
+- We will use SpringFox to produce documentation.
 
 Overview
-- Run employee-api service on a random port. Where it takes employee id and returns employee name.
-- Run payroll-api service on a random port. Where it takes employee id and returns employee salary.
-- Run registry service on 8761. 
-- Run Gateway service on 8080 and reverse proxy requests to all the services (employee-api,payroll-api)
-- All the microservices (employee-api,payroll-api,gateway) when they startup they register their service endpoint (rest api url)
- with registry
-- Gateway Spring Cloud load balancer (Client side load balancing) component in Spring Cloud Gateway acts as reverse proxy.
-It reads a registry for microservice endpoints and configures routes. 
+- We will be using SpringFox to document employee-api , payroll-api
+- API documentation will be viewed via gateway
+- Access Swagger UI of employee-api and make few rest calls
 
 Important Notes
-- Netflix Eureka Server plays a role of Registry. Registry is a spring boot application with Eureka Server as dependency.
-- Netflix Eureka Client is present in all the micro services (employee-api,payroll-api,gateway) and they discover Eureka
-server and register their availability with server.
-- Generally Netflix Ribbon Component is used as Client Side load balancer, but it is deprecated project. We will be using
-Spring Cloud Load balaner in gateway 
-
- 
-What is covered ?
-- Develop restapi microservices in Java using springboot 
-- Develop registry using Eureka Server
-- Develop ApiGateway microservice using Spring Cloud Load Balancer.
-- Microservices can be dynamically discovered.
+- Please refer my previous sessions to understand how these microservices work. In this session we will focus on documenting
+API and accessing API documentation. 
 
 # Source Code 
 ``` git clone https://github.com/balajich/spring-cloud-session-2-microservices-dynamic-ports.git ``` 

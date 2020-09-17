@@ -1,0 +1,99 @@
+{
+	"info": {
+		"_postman_id": "88d6d782-dc4b-4370-bd34-bcc3f680ac1e",
+		"name": "Spring Cloud Session 5 Microservices Documentation",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get Employee Details",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/employee/:employeeId",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"employee",
+						":employeeId"
+					],
+					"variable": [
+						{
+							"key": "employeeId",
+							"value": "100",
+							"description": "(Required) "
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "default response",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/employee/:employeeId",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"employee",
+								":employeeId"
+							],
+							"variable": [
+								{
+									"key": "employeeId"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "text",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "*/*"
+						}
+					],
+					"cookie": [],
+					"body": ""
+				}
+			]
+		},
+		{
+			"name": "OpenAPI definition of employee api",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/employee/v3/api-docs/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employee",
+						"v3",
+						"api-docs",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"id": "baseUrl",
+			"key": "baseUrl",
+			"value": "http://LAPTOP-7P654TSH.mshome.net:56640",
+			"type": "string"
+		}
+	],
+	"protocolProfileBehavior": {}
+}

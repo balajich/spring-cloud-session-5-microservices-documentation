@@ -45,7 +45,7 @@ and created the OpenAPI Specification. To create the API documentation, we will 
 - Swagger UI of employee api via gateway: ```  http://localhost:8080/employee/swagger-ui.html ```
 - OpenAPI descriptions of payroll api ``` curl -s -L http://localhost:8080/payroll/v3/api-docs/  ```
 - Swagger UI of payroll api via gateway: ```  http://localhost:8080/payroll/swagger-ui.html ```
-
+- You can use postman collection **Spring Cloud Session 5 Microservices Documentation.postman_collection.json**
 # Code
 In **employee-api** pom.xml add dependency **springdoc-openapi-ui**.
 ```xml

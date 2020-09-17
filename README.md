@@ -1,7 +1,7 @@
 # Spring Cloud Session 5 Microservices Documentation
 In this tutorial we are going to learn how do we document REST API microservices using **OpenAPI/Swagger**.
 - Swagger is one of the mostly used standard while documenting REST API services.
-- We will use SpringFox to produce Swagger documentation.
+- We will use SpringFox to produce Swagger/OpenAPI documentation.
 
 **Overview**
 - We will be using SpringFox to document employee-api , payroll-api

@@ -56,7 +56,7 @@ In **employee-api** pom.xml add dependency **springdoc-openapi-ui**.
         </dependency>
 ```
 Set swagger-ui and api-docs paths to be accessible on employee context, So that they can be accessed from gateway easily.
-**application.yml***
+**application.yml**
 ```yaml
 springdoc:
   swagger-ui:

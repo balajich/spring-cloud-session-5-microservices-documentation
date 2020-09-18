@@ -22,8 +22,8 @@ and created the OpenAPI Specification. To create the API documentation, we will 
 # Source Code 
 ``` git clone https://github.com/balajich/spring-cloud-session-5-microservices-documentation.git ``` 
 # Video
-[![Spring Cloud Session 5 Microservices Documentation](https://img.youtube.com/vi/5WuallBaMnw/0.jpg)](https://www.youtube.com/watch?v=5WuallBaMnw)
-- https://youtu.be/5WuallBaMnw
+[![Spring Cloud Session 5 Microservices Documentation](https://img.youtube.com/vi/RjPAX3pkBq4/0.jpg)](https://www.youtube.com/watch?v=RjPAX3pkBq4)
+- https://youtu.be/RjPAX3pkBq4
 # Architecture
 ![architecture](architecture.png "architecture")
 # Prerequisite
